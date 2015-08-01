@@ -1,0 +1,139 @@
+[2015-07-31 16:13:12.689] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-07-31 16:13:13.447] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-07-31 16:13:13.450] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-07-31 16:13:13.450] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 656 ms
+[2015-07-31 16:44:18.608] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-07-31 16:44:19.347] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-07-31 16:44:19.351] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-07-31 16:44:19.351] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 631 ms
+[2015-07-31 19:26:01.368] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 1
+[2015-07-31 19:26:01.378] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":1,"route":"connector.entryHandler.entry","body":{"key":"OnClickLoginBtn","timestamp":1438341994485}}
+[2015-07-31 19:26:01.390] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-07-31 19:26:01.392] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":0,"route":"","body":{}}
+[2015-07-31 19:26:01.392] [ERROR] pomelo - [31m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39minvalid route string. route : ""
+[2015-07-31 19:27:38.194] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [connector-server-1] is closed with session id: 1
+[2015-07-31 19:27:45.787] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 2
+[2015-07-31 19:27:56.570] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 2, msg: {"id":1,"route":"connector.entryHandler.entry","body":{"key":"OnClickLoginBtn","timestamp":1438342112728}}
+[2015-07-31 19:27:56.578] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 1, route: connector.entryHandler.entry, msg: {"code":200,"msg":"game server is ok."}, receivers: [2], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-07-31 19:28:17.053] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 2, msg: {"id":2,"route":"connector.entryHandler.entry","body":{"key":"OnClickCancelBtn","timestamp":1438342135477}}
+[2015-07-31 19:28:17.057] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 2, route: connector.entryHandler.entry, msg: {"code":200,"msg":"game server is ok."}, receivers: [2], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 13:27:40.004] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 13:27:41.469] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 13:27:41.472] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 13:27:41.472] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1358 ms
+[2015-08-01 13:47:44.569] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 1
+[2015-08-01 13:47:47.113] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":1,"route":"connector.entryHandler.login","body":{"key":"OnClickLoginBtn","timestamp":1438408106439}}
+[2015-08-01 13:47:47.120] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 1, route: connector.entryHandler.login, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 13:49:07.405] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":2,"route":"connector.entryHandler.cancel","body":{"key":"OnClickCancelBtn","timestamp":1438408186763}}
+[2015-08-01 13:49:07.406] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 2, route: connector.entryHandler.cancel, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 13:49:13.668] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":0,"route":"connector.entryHandler.notify","body":{"key":"OnSendMsgBtn"}}
+[2015-08-01 13:49:13.669] [WARN] pomelo - [33m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39mtry to response to a notify: "connector.entryHandler.notify"
+[2015-08-01 13:57:09.635] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\common\service\sessionService.js] [39msession on [connector-server-1] is closed with session id: 1
+[2015-08-01 13:57:09.697] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 2
+[2015-08-01 14:44:40.769] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 14:44:41.463] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 14:44:41.467] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 14:44:41.467] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 593 ms
+[2015-08-01 14:44:52.479] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 14:44:53.152] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 14:44:53.156] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 14:44:53.156] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 581 ms
+[2015-08-01 14:46:06.823] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 14:46:07.508] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 14:46:07.511] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 14:46:07.511] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 581 ms
+[2015-08-01 14:49:31.035] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 14:49:31.699] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 14:49:31.703] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 14:49:31.703] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 572 ms
+[2015-08-01 14:50:49.323] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 14:50:49.983] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 14:50:49.987] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 14:50:49.987] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 578 ms
+[2015-08-01 14:57:37.363] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 14:57:38.025] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 14:57:38.029] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 14:57:38.029] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 578 ms
+[2015-08-01 15:01:24.275] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 15:01:24.948] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 15:01:24.952] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 15:01:24.952] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 578 ms
+[2015-08-01 15:02:44.785] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 15:02:45.457] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 15:02:45.460] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 15:02:45.461] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 584 ms
+[2015-08-01 16:00:20.077] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:00:21.732] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:00:21.735] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:00:21.736] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1547 ms
+[2015-08-01 16:00:50.267] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:00:51.824] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:00:51.827] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:00:51.827] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1454 ms
+[2015-08-01 16:03:54.240] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:03:54.943] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:03:54.946] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:03:54.946] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 600 ms
+[2015-08-01 16:04:39.510] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:04:40.350] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:04:40.355] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:04:40.355] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 701 ms
+[2015-08-01 16:07:49.608] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:07:50.299] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:07:50.303] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:07:50.303] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 604 ms
+[2015-08-01 16:27:05.673] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:27:07.225] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:27:07.228] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:27:07.228] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1452 ms
+[2015-08-01 16:35:10.614] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:35:12.106] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:35:12.109] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:35:12.110] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1395 ms
+[2015-08-01 16:36:10.685] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:36:12.194] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:36:12.197] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:36:12.197] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1413 ms
+[2015-08-01 16:36:26.655] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:36:27.461] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:36:27.465] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:36:27.465] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 672 ms
+[2015-08-01 16:37:03.669] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 1
+[2015-08-01 16:37:07.538] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":1,"route":"connector.entryHandler.login","body":{"key":"OnClickLoginBtn","timestamp":1438418266967}}
+[2015-08-01 16:37:07.545] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 1, route: connector.entryHandler.login, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 16:37:07.551] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":2,"route":"mybackend.entryHandler.login","body":{"timestamp":1438418267014}}
+[2015-08-01 16:37:07.556] [ERROR] pomelo - [31m[d:\GameProject\game-server\node_modules\pomelo\lib\server\server.js] [39mfail to forward message:TypeError: Cannot read property 'msgRemote' of undefined
+    at doForward (d:\GameProject\game-server\node_modules\pomelo\lib\server\server.js:334:39)
+    at dispatch (d:\GameProject\game-server\node_modules\pomelo\lib\server\server.js:103:7)
+    at next (d:\GameProject\game-server\node_modules\pomelo\lib\common\service\filterService.js:50:7)
+    at Service.beforeFilter (d:\GameProject\game-server\node_modules\pomelo\lib\common\service\filterService.js:65:3)
+    at beforeFilter (d:\GameProject\game-server\node_modules\pomelo\lib\server\server.js:242:8)
+    at pro.globalHandle (d:\GameProject\game-server\node_modules\pomelo\lib\server\server.js:112:3)
+    at Component.globalHandle (d:\GameProject\game-server\node_modules\pomelo\lib\components\server.js:74:14)
+    at handleMessage (d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js:295:15)
+    at null.<anonymous> (d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js:239:5)
+    at emit (events.js:95:17)
+[2015-08-01 16:37:07.556] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 2, route: mybackend.entryHandler.login, msg: {"code":500}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 16:39:57.644] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:39:59.101] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:39:59.104] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:39:59.104] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 1358 ms
+[2015-08-01 16:40:24.973] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 1
+[2015-08-01 16:40:52.466] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":1,"route":"connector.entryHandler.login","body":{"key":"OnClickLoginBtn","timestamp":1438418491696}}
+[2015-08-01 16:42:32.306] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 1, route: connector.entryHandler.login, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 16:42:32.823] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\modules\monitorwatcher.js] [39mconnector-server-1 receive replaceServer signal: {"action":"replaceServer","servers":{"connector-server-1":{"main":"d:\\GameProject\\game-server\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":3150,"clientHost":"127.0.0.1","clientPort":3010,"frontend":"true","args":"--debug=32312","serverType":"connector","pid":5276}}}
+[2015-08-01 16:42:56.572] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":2,"route":"connector.entryHandler.cancel","body":{"key":"OnClickCancelBtn","timestamp":1438418616022}}
+[2015-08-01 16:43:01.669] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 2, route: connector.entryHandler.cancel, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 16:45:28.027] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 16:45:28.738] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 16:45:28.741] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 16:45:28.741] [INFO] pomelo - [32m[d:\GameProject\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 614 ms
+[2015-08-01 16:45:48.377] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] getSession session is created with session id: 1
+[2015-08-01 16:45:57.890] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":1,"route":"connector.entryHandler.login","body":{"key":"OnClickLoginBtn","timestamp":1438418797306}}
+[2015-08-01 16:45:57.897] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 1, route: connector.entryHandler.login, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 16:46:12.558] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] handleMessage session id: 1, msg: {"id":2,"route":"connector.entryHandler.cancel","body":{"key":"OnClickCancelBtn","timestamp":1438418812010}}
+[2015-08-01 16:46:12.559] [DEBUG] pomelo - [36m[d:\GameProject\game-server\node_modules\pomelo\lib\components\connector.js] [39m[connector-server-1] send message reqId: 2, route: connector.entryHandler.cancel, msg: {"code":200,"msg":"game server is ok."}, receivers: [1], opts: {"type":"response","userOptions":{},"isResponse":true}
+[2015-08-01 19:51:08.475] [INFO] pomelo - [32m[d:\GameProject\GameProjectServer\game-server\node_modules\pomelo\lib\application.js] [39mapplication inited: "connector-server-1"
+[2015-08-01 19:51:09.133] [INFO] pomelo - [32m[d:\GameProject\GameProjectServer\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" enter after start...
+[2015-08-01 19:51:09.136] [INFO] pomelo - [32m[d:\GameProject\GameProjectServer\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" finish start
+[2015-08-01 19:51:09.137] [INFO] pomelo - [32m[d:\GameProject\GameProjectServer\game-server\node_modules\pomelo\lib\application.js] [39m"connector-server-1" startup in 571 ms
