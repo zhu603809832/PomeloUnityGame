@@ -8,10 +8,13 @@
     "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
 
-    "modules" : ["cocos2d"],
+    "modules" : ["cocos2d", "cocostudio"],
 
     "jsList" : [
+        "lib/node_modules/pomelo-cocos2d-js/dist/pomelo-cocos2d-js.js",
+        "src/config.js",
         "src/resource.js",
-        "src/app.js"
+        "src/app.js",
+        "src/login.js"
     ]
 }

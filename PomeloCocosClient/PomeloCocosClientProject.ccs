@@ -1,0 +1,20 @@
+<Solution>
+  <PropertyGroup Name="PomeloCocosClientProject" Version="2.3.2.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Project Name="LoginScene.csd" Type="Scene" />
+        <Image Name="Input.png" />
+        <Image Name="LoginBkg.jpg" />
+        <Image Name="LoginBtn.png" />
+        <Image Name="LoginFramebg0.png" />
+        <Image Name="LoginFramebg1.png" />
+        <Image Name="LoginFramebg2.png" />
+        <Image Name="LoginLogo.png" />
+        <Image Name="RegisterBtn2.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
