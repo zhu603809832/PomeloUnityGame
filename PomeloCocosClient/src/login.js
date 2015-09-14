@@ -26,10 +26,11 @@ var LoginLayer = cc.Layer.extend({
 
         var txtAccount = ccui.helper.seekWidgetByName(loginsceneRoot.node, "TextFieldAccount");
         this.txtAccount = txtAccount;
+        this.txtAccount.addEventListenerTextField(this.OnClickText, this);
 
         var txtPassword = ccui.helper.seekWidgetByName(loginsceneRoot.node, "TextFieldPassword");
         this.txtPassword = txtPassword;
-
+        this.txtPassword.addEventListenerTextField(this.OnClickText, this);
         return true;
     },
 
@@ -38,14 +39,26 @@ var LoginLayer = cc.Layer.extend({
             case ccui.Widget.TOUCH_BEGAN:
                 this.login();
                 break;
-            case ccui.Widget.TOUCH_MOVED:
-                break;
-            case ccui.Widget.TOUCH_ENDED:
-                break;
             default :
                 break;
         }
         return true;
+    },
+
+    OnClickText : function(sender, type){
+        switch(type){
+            case ccui.Widget.TOUCH_BEGAN:
+                if(sender == this.txtAccount){
+                    this.txtAccount.setPlaceHolder("");
+                }
+                else if(sender == this.txtPassword){
+                    this.txtPassword.setPlaceHolder("");
+                }
+
+                break;
+            default :
+                break;
+        }
     },
 
     login : function(){
@@ -60,44 +73,8 @@ var LoginLayer = cc.Layer.extend({
             alert("password require");
             return;
         }
-        this.httpPostRequest(account, password);
+        httpPostRequest(account, password);
     },
-
-    httpPostRequest : function(username, password){
-        var xhr = cc.loader.getXMLHttpRequest();
-        xhr.open("POST", "http://192.168.40.129:3001/login", true);
-        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status <= 207)) {
-                var httpStatus = xhr.statusText;
-                var response = xhr.responseText;
-
-                var data = eval('(' + response + ')');
-                var code = data.code;
-                switch(code){
-                    case 500:
-                        alert("username not exist!");
-                        break;
-                    case 501:
-                        alert("password incorrect!");
-                        break;
-                    case 200://success
-                        //alert("login success!");
-                        authEntry(data.uid, data.token, function() {
-
-                        });
-                        localStorage.setItem('username', username);
-
-                        break;
-                    default :
-                        break;
-                }
-            }
-        };
-        var data = "username=" + username + "&" + "password=" + password;
-        xhr.send(data);
-    }
 });
 
 var LoginScene = cc.Scene.extend({
@@ -107,6 +84,41 @@ var LoginScene = cc.Scene.extend({
         this.addChild(layer);
     }
 });
+
+var httpPostRequest = function(username, password){
+    var xhr = cc.loader.getXMLHttpRequest();
+    xhr.open("POST", "http://192.168.40.129:3001/login", true);
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && (xhr.status >= 200 && xhr.status <= 207)) {
+            var httpStatus = xhr.statusText;
+            var response = xhr.responseText;
+
+            var data = eval('(' + response + ')');
+            var code = data.code;
+            switch(code){
+                case 500:
+                    alert("username not exist!");
+                    break;
+                case 501:
+                    alert("password incorrect!");
+                    break;
+                case 200://success
+                    authEntry(data.uid, data.token, function() {
+
+                    });
+                    localStorage.setItem('username', username);
+
+                    break;
+                default :
+                    break;
+            }
+        }
+    };
+    var data = "username=" + username + "&" + "password=" + password;
+    xhr.send(data);
+}
 
 var authEntry  = function(uid, token, callback) {
     queryEntry(uid, function(host, port) {
