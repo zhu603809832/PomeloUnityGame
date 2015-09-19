@@ -12,9 +12,13 @@
 
     "jsList" : [
         "lib/node_modules/pomelo-cocos2d-js/dist/pomelo-cocos2d-js.js",
+        "src/handler/loginMsgHandler.js",
+        "src/handler/gameMsgHandler.js",
         "src/config.js",
         "src/resource.js",
         "src/app.js",
-        "src/login.js"
+        "src/selectRole.js",
+        "src/login.js",
+        "src/register.js"
     ]
 }

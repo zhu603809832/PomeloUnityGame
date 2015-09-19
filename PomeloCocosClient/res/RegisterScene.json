@@ -1,0 +1,1033 @@
+{
+  "ID": "c24d7b4c-4b18-4b9c-b98d-f3d7d5b97492",
+  "Version": "2.3.2.0",
+  "Name": "RegisterScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 29,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 480.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 48,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "RegisterBkg.jpg",
+                  "Plist": ""
+                },
+                "Scale9Width": 2000,
+                "Scale9Height": 1199,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 2.0833,
+                  "Y": 1.8734
+                },
+                "LeftMargin": -520.0,
+                "RightMargin": -520.0,
+                "TopMargin": -279.5,
+                "BottomMargin": -279.5,
+                "Tag": 49,
+                "ActionTag": 381872,
+                "Size": {
+                  "X": 2000.0,
+                  "Y": 1199.0
+                },
+                "Name": "ImageBkg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Logo.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 210,
+                "Scale9Height": 143,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 506.1453,
+                  "Y": 550.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5272,
+                  "Y": 0.8594
+                },
+                "PreSize": {
+                  "X": 0.2188,
+                  "Y": 0.2234
+                },
+                "LeftMargin": 401.1453,
+                "RightMargin": 348.8547,
+                "TopMargin": 18.5,
+                "BottomMargin": 478.5,
+                "Tag": 50,
+                "ActionTag": 1023665111,
+                "Size": {
+                  "X": 210.0,
+                  "Y": 143.0
+                },
+                "Name": "ImageLogon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0,
+                  "Y": 280.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.4375
+                },
+                "PreSize": {
+                  "X": 0.4167,
+                  "Y": 0.625
+                },
+                "LeftMargin": 280.0,
+                "RightMargin": 280.0,
+                "TopMargin": 160.0,
+                "BottomMargin": 80.0,
+                "Tag": 51,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "LoginFramebg0.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 617,
+                    "Scale9Height": 388,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 200.0,
+                      "Y": 200.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.5425,
+                      "Y": 0.97
+                    },
+                    "LeftMargin": -108.5,
+                    "RightMargin": -108.5,
+                    "TopMargin": 6.0,
+                    "BottomMargin": 6.0,
+                    "Tag": 52,
+                    "ActionTag": 1518855126,
+                    "Size": {
+                      "X": 617.0,
+                      "Y": 388.0
+                    },
+                    "Name": "Image_0",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "LoginFramebg1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 548,
+                    "Scale9Height": 334,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 200.0,
+                      "Y": 200.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.37,
+                      "Y": 0.835
+                    },
+                    "LeftMargin": -74.0,
+                    "RightMargin": -74.0,
+                    "TopMargin": 33.0,
+                    "BottomMargin": 33.0,
+                    "Tag": 53,
+                    "ActionTag": 934825490,
+                    "Size": {
+                      "X": 548.0,
+                      "Y": 334.0
+                    },
+                    "Alpha": 127,
+                    "Name": "Image_1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "LoginFramebg2.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 594,
+                    "Scale9Height": 373,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 200.0,
+                      "Y": 200.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.485,
+                      "Y": 0.9325
+                    },
+                    "LeftMargin": -97.0,
+                    "RightMargin": -97.0,
+                    "TopMargin": 13.5,
+                    "BottomMargin": 13.5,
+                    "Tag": 54,
+                    "ActionTag": 993197799,
+                    "Size": {
+                      "X": 594.0,
+                      "Y": 373.0
+                    },
+                    "Name": "Image_2",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "RegisterLogon.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 132,
+                    "Scale9Height": 33,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 200.0,
+                      "Y": 337.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.8425
+                    },
+                    "PreSize": {
+                      "X": 0.33,
+                      "Y": 0.0825
+                    },
+                    "LeftMargin": 134.0,
+                    "RightMargin": 134.0,
+                    "TopMargin": 46.5,
+                    "BottomMargin": 320.5,
+                    "Tag": 55,
+                    "ActionTag": -11109665,
+                    "Size": {
+                      "X": 132.0,
+                      "Y": 33.0
+                    },
+                    "Name": "ImageRegister",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -459816462,
+                "Size": {
+                  "X": 400.0,
+                  "Y": 400.0
+                },
+                "Name": "PanelInputBkg",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0,
+                  "Y": 280.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.4375
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 380.0,
+                "RightMargin": 380.0,
+                "TopMargin": 260.0,
+                "BottomMargin": 180.0,
+                "Tag": 56,
+                "Children": [
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "账号：\n",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 150.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.75
+                    },
+                    "PreSize": {
+                      "X": 0.3,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": -30.0,
+                    "RightMargin": 170.0,
+                    "TopMargin": 40.0,
+                    "BottomMargin": 140.0,
+                    "Tag": 57,
+                    "ActionTag": 1158642324,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 20.0
+                    },
+                    "Name": "TextAccount",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Input.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 254,
+                    "Scale9Height": 34,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 150.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.75
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 25.0,
+                    "RightMargin": -75.0,
+                    "TopMargin": 32.5,
+                    "BottomMargin": 132.5,
+                    "Tag": 58,
+                    "ActionTag": 1891283717,
+                    "Size": {
+                      "X": 250.0,
+                      "Y": 35.0
+                    },
+                    "Name": "Image_9",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "输入账号",
+                    "MaxLengthText": 10,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 150.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.75
+                    },
+                    "PreSize": {
+                      "X": 1.2,
+                      "Y": 0.125
+                    },
+                    "LeftMargin": 30.0,
+                    "RightMargin": -70.0,
+                    "TopMargin": 37.5,
+                    "BottomMargin": 137.5,
+                    "CallBackType": "Click",
+                    "Tag": 59,
+                    "ActionTag": 203303227,
+                    "Size": {
+                      "X": 240.0,
+                      "Y": 25.0
+                    },
+                    "Name": "TextFieldAccount",
+                    "ctype": "TextFieldObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "密码：\n",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 100.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": -30.0,
+                    "RightMargin": 170.0,
+                    "TopMargin": 90.0,
+                    "BottomMargin": 90.0,
+                    "Tag": 60,
+                    "ActionTag": -1619282778,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 20.0
+                    },
+                    "Name": "TextPassword",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Input.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 254,
+                    "Scale9Height": 34,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 100.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 2.54,
+                      "Y": 1.7
+                    },
+                    "LeftMargin": 23.0,
+                    "RightMargin": -77.0,
+                    "TopMargin": 83.0,
+                    "BottomMargin": 83.0,
+                    "Tag": 61,
+                    "ActionTag": 1964807250,
+                    "Size": {
+                      "X": 254.0,
+                      "Y": 34.0
+                    },
+                    "Name": "Image_10",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "输入密码",
+                    "MaxLengthText": 10,
+                    "PasswordEnable": true,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 100.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 1.2,
+                      "Y": 0.125
+                    },
+                    "LeftMargin": 30.0,
+                    "RightMargin": -70.0,
+                    "TopMargin": 87.5,
+                    "BottomMargin": 87.5,
+                    "Tag": 62,
+                    "ActionTag": -2144592463,
+                    "Size": {
+                      "X": 240.0,
+                      "Y": 25.0
+                    },
+                    "Name": "TextFieldPassword",
+                    "ctype": "TextFieldObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "确认密码：\n",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -20.0,
+                      "Y": 50.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.1,
+                      "Y": 0.25
+                    },
+                    "PreSize": {
+                      "X": 0.5,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": -70.0,
+                    "RightMargin": 170.0,
+                    "TopMargin": 140.0,
+                    "BottomMargin": 40.0,
+                    "Tag": 66,
+                    "ActionTag": 1000764286,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "TextPassword_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Input.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 254,
+                    "Scale9Height": 34,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 50.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.25
+                    },
+                    "PreSize": {
+                      "X": 2.54,
+                      "Y": 1.7
+                    },
+                    "LeftMargin": 23.0,
+                    "RightMargin": -77.0,
+                    "TopMargin": 133.0,
+                    "BottomMargin": 33.0,
+                    "Tag": 67,
+                    "ActionTag": -629323553,
+                    "Size": {
+                      "X": 254.0,
+                      "Y": 34.0
+                    },
+                    "Name": "Image_10_0",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "再次输入密码",
+                    "MaxLengthText": 10,
+                    "PasswordEnable": true,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 50.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.25
+                    },
+                    "PreSize": {
+                      "X": 1.2,
+                      "Y": 0.125
+                    },
+                    "LeftMargin": 30.0,
+                    "RightMargin": -70.0,
+                    "TopMargin": 137.5,
+                    "BottomMargin": 37.5,
+                    "Tag": 68,
+                    "ActionTag": -485122893,
+                    "Size": {
+                      "X": 240.0,
+                      "Y": 25.0
+                    },
+                    "Name": "TextFieldPasswordConfirm",
+                    "ctype": "TextFieldObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Press.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "RegisterBnt.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 9,
+                    "Scale9Width": 80,
+                    "Scale9Height": 26,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 120.0,
+                      "Y": -20.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6,
+                      "Y": -0.1
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.22
+                    },
+                    "LeftMargin": 65.0,
+                    "RightMargin": 25.0,
+                    "TopMargin": 198.0,
+                    "BottomMargin": -42.0,
+                    "Tag": 64,
+                    "ActionTag": -821337140,
+                    "Size": {
+                      "X": 110.0,
+                      "Y": 44.0
+                    },
+                    "Name": "ButtonRegister",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "Returnbnt1.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "Returnbnt2.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Returnbnt1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 43,
+                    "Scale9Height": 19,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 312.4927,
+                      "Y": 237.826
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 1.5625,
+                      "Y": 1.1891
+                    },
+                    "PreSize": {
+                      "X": 0.365,
+                      "Y": 0.205
+                    },
+                    "LeftMargin": 275.9927,
+                    "RightMargin": -148.9927,
+                    "TopMargin": -58.326,
+                    "BottomMargin": 217.326,
+                    "Tag": 65,
+                    "ActionTag": -837193198,
+                    "Size": {
+                      "X": 73.0,
+                      "Y": 41.0
+                    },
+                    "Name": "ButtonBack",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -649947133,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 200.0
+                },
+                "Name": "PanelInput",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1102234648,
+            "Size": {
+              "X": 960.0,
+              "Y": 640.0
+            },
+            "Name": "PanelRegister",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "Input.png",
+        "LoginFramebg0.png",
+        "LoginFramebg1.png",
+        "LoginFramebg2.png",
+        "Logo.png",
+        "RegisterBkg.jpg",
+        "RegisterBnt.png",
+        "RegisterLogon.png",
+        "Returnbnt1.png",
+        "Returnbnt2.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

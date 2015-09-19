@@ -19,7 +19,17 @@
                 <PreSize X="1.0000" Y="1.0000" />
                 <FileData Type="Normal" Path="LoginBkg.jpg" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="PanelInputBkg" ActionTag="-687734501" Tag="7" IconVisible="False" LeftMargin="280.0000" RightMargin="280.0000" TopMargin="120.0000" BottomMargin="120.0000" TouchEnable="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="ImageLogon" ActionTag="748192394" Tag="47" IconVisible="False" LeftMargin="401.1453" RightMargin="348.8547" TopMargin="18.5000" BottomMargin="478.5000" Scale9Width="210" Scale9Height="143" ctype="ImageViewObjectData">
+                <Size X="210.0000" Y="143.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="506.1453" Y="550.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5272" Y="0.8594" />
+                <PreSize X="0.2188" Y="0.2234" />
+                <FileData Type="Normal" Path="Logo.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="PanelInputBkg" ActionTag="-687734501" Tag="7" IconVisible="False" LeftMargin="280.0000" RightMargin="280.0000" TopMargin="160.0000" BottomMargin="80.0000" TouchEnable="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="400.0000" Y="400.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_0" ActionTag="-445137116" Tag="8" IconVisible="False" LeftMargin="-108.5000" RightMargin="-108.5000" TopMargin="6.0000" BottomMargin="6.0000" Scale9Width="617" Scale9Height="388" ctype="ImageViewObjectData">
@@ -64,17 +74,17 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="480.0000" Y="320.0000" />
+                <Position X="480.0000" Y="280.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.5000" />
+                <PrePosition X="0.5000" Y="0.4375" />
                 <PreSize X="0.4167" Y="0.6250" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="PanelInput" ActionTag="13469772" Tag="18" IconVisible="False" LeftMargin="380.0000" RightMargin="380.0000" TopMargin="220.0000" BottomMargin="220.0000" TouchEnable="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="PanelInput" ActionTag="13469772" Tag="18" IconVisible="False" LeftMargin="380.0000" RightMargin="380.0000" TopMargin="260.0000" BottomMargin="180.0000" TouchEnable="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="200.0000" Y="200.0000" />
                 <Children>
                   <AbstractNodeData Name="TextAccount" ActionTag="-1860085287" Tag="19" IconVisible="False" LeftMargin="-30.0000" RightMargin="170.0000" TopMargin="40.0000" BottomMargin="140.0000" IsCustomSize="True" FontSize="20" LabelText="账号：&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -169,10 +179,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="480.0000" Y="320.0000" />
+                <Position X="480.0000" Y="280.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5000" Y="0.5000" />
+                <PrePosition X="0.5000" Y="0.4375" />
                 <PreSize X="0.0000" Y="0.0000" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />

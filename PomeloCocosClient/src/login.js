@@ -13,16 +13,17 @@ var LoginLayer = cc.Layer.extend({
         // 2. add a menu item with "X" image, which is clicked to quit the program
         //    you may modify it.
         // ask the window size
-        var size = cc.winSize;
 
         var loginsceneRoot = ccs.load(res.LoginScene_json);
         this.addChild(loginsceneRoot.node);
 
         var btnLogin = ccui.helper.seekWidgetByName(loginsceneRoot.node, "ButtonLogin");
-        btnLogin.addTouchEventListener(this.OnClickButton,this);
+        this.btnLogin = btnLogin;
+        this.btnLogin.addTouchEventListener(this.OnClickButton,this);
 
         var btnRegister = ccui.helper.seekWidgetByName(loginsceneRoot.node, "ButtonRegister");
-        btnRegister.addTouchEventListener(this.OnClickButton, this);
+        this.btnRegister = btnRegister;
+        this.btnRegister.addTouchEventListener(this.OnClickButton, this);
 
         var txtAccount = ccui.helper.seekWidgetByName(loginsceneRoot.node, "TextFieldAccount");
         this.txtAccount = txtAccount;
@@ -37,7 +38,12 @@ var LoginLayer = cc.Layer.extend({
     OnClickButton : function(sender, type) {
         switch (type){
             case ccui.Widget.TOUCH_BEGAN:
-                this.login();
+                if(sender == this.btnLogin){
+                    this.login();
+                }
+                else if(sender == this.btnRegister){
+                    cc.director.runScene(new RegisterScene());
+                }
                 break;
             default :
                 break;
@@ -59,6 +65,7 @@ var LoginLayer = cc.Layer.extend({
             default :
                 break;
         }
+        return true;
     },
 
     login : function(){
@@ -87,7 +94,7 @@ var LoginScene = cc.Scene.extend({
 
 var httpPostRequest = function(username, password){
     var xhr = cc.loader.getXMLHttpRequest();
-    xhr.open("POST", "http://192.168.40.129:3001/login", true);
+    xhr.open("POST", config.GATE_HOST_LOGIN, true);
     xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
 
     xhr.onreadystatechange = function () {
@@ -170,11 +177,11 @@ var entry = function(host, port, token, callback){
             }
 
             // init handler
-            //loginMsgHandler.init();
-            //gameMsgHandler.init();
+            loginMsgHandler.init();
+            gameMsgHandler.init();
 
             if (!player || player.id <= 0) {
-                //switchManager.selectView("heroSelectPanel");
+                cc.director.runScene(new SelectRoleScene());
             } else {
                 afterLogin(data);
             }
@@ -204,8 +211,8 @@ var afterLogin = function(data){
 
 var loadResource = function(opt, callback){
     /*
-    switchManager.selectView("loadingPanel");//switchManager jquery实现
-    var loader = new ResourceLoader(opt); //ResourceLoader?
+    switchManager.selectView("loadingPanel");//logining界面需要实现
+    var loader = new ResourceLoader(opt); //ResourceLoader需要实现
     var $percent = $('#id_loadPercent').html(0);
     var $bar = $('#id_loadRate').css('width', 0);
     loader.on('loading', function(data) {

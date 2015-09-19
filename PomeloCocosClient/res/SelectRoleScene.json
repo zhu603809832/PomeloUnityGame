@@ -1,0 +1,631 @@
+{
+  "ID": "aa1be32d-1418-43eb-b745-6ac431391d9c",
+  "Version": "2.3.2.0",
+  "Name": "SelectRoleScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 28,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 31,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Selectrole.jpg",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 1650,
+                "Scale9Height": 930,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 32,
+                "ActionTag": -1124587881,
+                "Size": {
+                  "X": 960.0,
+                  "Y": 640.0
+                },
+                "Name": "ImageBkg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LogoMin.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 128,
+                "Scale9Height": 87,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0,
+                  "Y": 560.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.875
+                },
+                "PreSize": {
+                  "X": 0.1333,
+                  "Y": 0.1359
+                },
+                "LeftMargin": 416.0,
+                "RightMargin": 416.0,
+                "TopMargin": 36.5,
+                "BottomMargin": 516.5,
+                "Tag": 46,
+                "ActionTag": -1070112026,
+                "Size": {
+                  "X": 128.0,
+                  "Y": 87.0
+                },
+                "Name": "ImageLogon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 480.0,
+                  "Y": 50.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.0781
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 480.0,
+                "RightMargin": 280.0,
+                "TopMargin": 390.0,
+                "BottomMargin": 50.0,
+                "Tag": 33,
+                "Children": [
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Name:",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -110.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.55,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "LeftMargin": -135.0,
+                    "RightMargin": 285.0,
+                    "TopMargin": 190.0,
+                    "BottomMargin": -10.0,
+                    "Tag": 34,
+                    "ActionTag": 1867271419,
+                    "Size": {
+                      "X": 50.0,
+                      "Y": 20.0
+                    },
+                    "Name": "TextName",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Input.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 254,
+                    "Scale9Height": 34,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.75,
+                      "Y": 0.135
+                    },
+                    "LeftMargin": -75.0,
+                    "RightMargin": 125.0,
+                    "TopMargin": 186.5,
+                    "BottomMargin": -13.5,
+                    "Tag": 37,
+                    "ActionTag": 757491277,
+                    "Size": {
+                      "X": 150.0,
+                      "Y": 27.0
+                    },
+                    "Name": "Image_2",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 16,
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "输入角色名",
+                    "MaxLengthEnable": true,
+                    "MaxLengthText": 15,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.675,
+                      "Y": 0.08
+                    },
+                    "LeftMargin": -67.5,
+                    "RightMargin": 132.5,
+                    "TopMargin": 192.0,
+                    "BottomMargin": -8.0,
+                    "Tag": 35,
+                    "ActionTag": -899967291,
+                    "Size": {
+                      "X": 135.0,
+                      "Y": 16.0
+                    },
+                    "Name": "TextFieldName",
+                    "ctype": "TextFieldObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Press.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Chooserolebnt.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 87,
+                    "Scale9Height": 22,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 150.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.75,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.5,
+                      "Y": 0.2
+                    },
+                    "LeftMargin": 100.0,
+                    "TopMargin": 180.0,
+                    "BottomMargin": -20.0,
+                    "Tag": 36,
+                    "ActionTag": 805738584,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 40.0
+                    },
+                    "Name": "ButtonCreateRole",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "Targetrolebg.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 218,
+                    "Scale9Height": 355,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -100.0,
+                      "Y": 250.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.5,
+                      "Y": 1.25
+                    },
+                    "PreSize": {
+                      "X": 1.09,
+                      "Y": 1.775
+                    },
+                    "LeftMargin": -209.0,
+                    "RightMargin": 191.0,
+                    "TopMargin": -227.5,
+                    "BottomMargin": 72.5,
+                    "Tag": 40,
+                    "ActionTag": 657256417,
+                    "Size": {
+                      "X": 218.0,
+                      "Y": 355.0
+                    },
+                    "Name": "ImageSelect",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Press.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Role1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 803,
+                    "Scale9Height": 978,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": -100.0,
+                      "Y": 250.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": -0.5,
+                      "Y": 1.25
+                    },
+                    "PreSize": {
+                      "X": 1.4,
+                      "Y": 1.75
+                    },
+                    "LeftMargin": -240.0,
+                    "RightMargin": 160.0,
+                    "TopMargin": -225.0,
+                    "BottomMargin": 75.0,
+                    "Tag": 38,
+                    "ActionTag": 579575331,
+                    "Size": {
+                      "X": 280.0,
+                      "Y": 350.0
+                    },
+                    "Name": "ButtonRole1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Press.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "Role2.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 1410,
+                    "Scale9Height": 1706,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 250.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 1.25
+                    },
+                    "PreSize": {
+                      "X": 1.4,
+                      "Y": 1.75
+                    },
+                    "LeftMargin": -40.0,
+                    "RightMargin": -40.0,
+                    "TopMargin": -225.0,
+                    "BottomMargin": 75.0,
+                    "Tag": 39,
+                    "ActionTag": -887055975,
+                    "Size": {
+                      "X": 280.0,
+                      "Y": 350.0
+                    },
+                    "Name": "ButtonRole2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -33106346,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 200.0
+                },
+                "Name": "Panel_2",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 1720412738,
+            "Size": {
+              "X": 960.0,
+              "Y": 640.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Chooserolebnt.png",
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "Input.png",
+        "LogoMin.png",
+        "Role1.png",
+        "Role2.png",
+        "Selectrole.jpg",
+        "Targetrolebg.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

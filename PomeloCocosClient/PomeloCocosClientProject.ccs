@@ -14,6 +14,21 @@
         <Image Name="LoginFramebg2.png" />
         <Image Name="LoginLogo.png" />
         <Image Name="RegisterBtn2.png" />
+        <Project Name="SelectRoleScene.csd" Type="Scene" />
+        <Image Name="Selectrole.jpg" />
+        <Image Name="Chooserolebnt.png" />
+        <Image Name="Targetrolebg.png" />
+        <Image Name="Role1.png" />
+        <Image Name="Role2.png" />
+        <Project Name="RegisterScene.csd" Type="Scene" />
+        <Image Name="Logo.png" />
+        <Image Name="LogoMin.png" />
+        <Image Name="RegisterBkg.jpg" />
+        <Image Name="RegisterLogon.png" />
+        <Image Name="RegisterBnt.png" />
+        <Image Name="ReturnBnt.png" />
+        <Image Name="Returnbnt1.png" />
+        <Image Name="Returnbnt2.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

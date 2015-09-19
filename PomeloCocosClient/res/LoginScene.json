@@ -12,6 +12,7 @@
       },
       "AnimationList": [],
       "ObjectData": {
+        "CustomClassName": "LoginSceneClass",
         "Tag": 3,
         "Children": [
           {
@@ -94,6 +95,49 @@
                 "ctype": "ImageViewObjectData"
               },
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Logo.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 210,
+                "Scale9Height": 143,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 506.1453,
+                  "Y": 550.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5272,
+                  "Y": 0.8594
+                },
+                "PreSize": {
+                  "X": 0.2188,
+                  "Y": 0.2234
+                },
+                "LeftMargin": 401.1453,
+                "RightMargin": 348.8547,
+                "TopMargin": 18.5,
+                "BottomMargin": 478.5,
+                "Tag": 47,
+                "ActionTag": 748192394,
+                "Size": {
+                  "X": 210.0,
+                  "Y": 143.0
+                },
+                "Name": "ImageLogon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
                 "BackColorAlpha": 0,
                 "ComboBoxIndex": 1,
                 "SingleColor": {
@@ -115,7 +159,7 @@
                 },
                 "Position": {
                   "X": 480.0,
-                  "Y": 320.0
+                  "Y": 280.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -125,7 +169,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5,
-                  "Y": 0.5
+                  "Y": 0.4375
                 },
                 "PreSize": {
                   "X": 0.4167,
@@ -133,8 +177,8 @@
                 },
                 "LeftMargin": 280.0,
                 "RightMargin": 280.0,
-                "TopMargin": 120.0,
-                "BottomMargin": 120.0,
+                "TopMargin": 160.0,
+                "BottomMargin": 80.0,
                 "Tag": 7,
                 "Children": [
                   {
@@ -341,7 +385,7 @@
                 },
                 "Position": {
                   "X": 480.0,
-                  "Y": 320.0
+                  "Y": 280.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -351,7 +395,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5,
-                  "Y": 0.5
+                  "Y": 0.4375
                 },
                 "PreSize": {
                   "X": 0.0,
@@ -359,8 +403,8 @@
                 },
                 "LeftMargin": 380.0,
                 "RightMargin": 380.0,
-                "TopMargin": 220.0,
-                "BottomMargin": 220.0,
+                "TopMargin": 260.0,
+                "BottomMargin": 180.0,
                 "Tag": 18,
                 "Children": [
                   {
@@ -493,7 +537,7 @@
                     "RightMargin": -70.0,
                     "TopMargin": 37.5,
                     "BottomMargin": 137.5,
-                    "CallBackType": "Event",
+                    "CallBackType": "Click",
                     "Tag": 20,
                     "ActionTag": -1329368141,
                     "Size": {
@@ -709,6 +753,7 @@
                     "RightMargin": -35.0,
                     "TopMargin": 148.0,
                     "BottomMargin": 8.0,
+                    "CallBackType": "Click",
                     "Tag": 25,
                     "ActionTag": 812352350,
                     "Size": {
@@ -829,6 +874,7 @@
         "LoginFramebg1.png",
         "LoginFramebg2.png",
         "LoginLogo.png",
+        "Logo.png",
         "RegisterBtn2.png"
       ],
       "ctype": "GameProjectData"
