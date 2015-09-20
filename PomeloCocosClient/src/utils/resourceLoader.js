@@ -18,18 +18,30 @@ var ResourceLoader = function(opt){
     this.jsonLoad = !!opt.jsonLoad;
 };
 
-var pro = ResourceLoader.prototype = Object.create(EventEmitter.prototype);
+var pro = ResourceLoader.prototype;
 
 pro.setTotalCount = function(count){
     this.totalCount = count;
-    //this.emit('loading', {total: this.totalCount, loaded: this.loadedCount});
+    var event = new cc.EventCustom("loading");
+    var jsonData = {"total": this.totalCount, "loaded": this.loadedCount };
+    var stringData = JSON.stringify(jsonData);
+    event.setUserData(stringData);
+    cc.eventManager.dispatchEvent(event);
 };
 
 pro.setLoadedCount = function(count){
     this.loadedCount = count;
     //this.emit('loading', {total: this.totalCount, loaded: this.loadedCount});
+
+    var event = new cc.EventCustom("loading");
+    var jsonData = {"total": this.totalCount, "loaded": this.loadedCount };
+    var stringData = JSON.stringify(jsonData);
+    event.setUserData(stringData);
+    cc.eventManager.dispatchEvent(event);
+
     if (this.loadedCount === this.totalCount) {
-        //this.emit('complete');
+        var event = new cc.EventCustom("complete");
+        cc.eventManager.dispatchEvent(event);
     }
 };
 

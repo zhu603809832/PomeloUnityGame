@@ -123,7 +123,7 @@ var registerPostRequest = function(account, password){
                     authEntry(data.uid, data.token, function() {
 
                     });
-                    localStorage.setItem('username', username);
+                    localStorage.setItem('username', account);
                     break;
                 default :
                     alert("register fail!");

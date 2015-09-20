@@ -14,7 +14,7 @@ loginMsgHandler.init = function(){
      * Handle kick out messge, occours when the current player is kicked out
      */
     pomelo.on('onKick', function() {
-        //location.reload();
+        location.reload();
         //switchManager.selectView("loginPanel");
     });
 
@@ -23,7 +23,7 @@ loginMsgHandler.init = function(){
      * @param reason {Object} The disconnect reason
      */
     pomelo.on('disconnect', function(reason) {
-        //location.reload();
+        location.reload();
         //switchManager.selectView("loginPanel");
     });
 
