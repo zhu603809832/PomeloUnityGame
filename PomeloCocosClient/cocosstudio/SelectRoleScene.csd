@@ -1,5 +1,5 @@
 <GameProjectFile>
-  <PropertyGroup Type="Scene" Name="SelectRoleScene" ID="aa1be32d-1418-43eb-b745-6ac431391d9c" Version="2.3.2.0" />
+  <PropertyGroup Type="Scene" Name="SelectRoleScene" ID="aa1be32d-1418-43eb-b745-6ac431391d9c" Version="2.3.2.3" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />

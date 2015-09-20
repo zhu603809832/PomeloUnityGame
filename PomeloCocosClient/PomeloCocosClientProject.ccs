@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="PomeloCocosClientProject" Version="2.3.2.0" Type="CocosStudio" />
+  <PropertyGroup Name="PomeloCocosClientProject" Version="2.3.2.3" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
@@ -26,9 +26,15 @@
         <Image Name="RegisterBkg.jpg" />
         <Image Name="RegisterLogon.png" />
         <Image Name="RegisterBnt.png" />
-        <Image Name="ReturnBnt.png" />
         <Image Name="Returnbnt1.png" />
         <Image Name="Returnbnt2.png" />
+        <Image Name="Loadframebg0.png" />
+        <Image Name="Loadframebg1.png" />
+        <Image Name="loadingBkg.jpg" />
+        <Image Name="Loadratebg.png" />
+        <Image Name="Loadratecover.png" />
+        <Image Name="Loadtt.png" />
+        <Project Name="LoadingScene.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

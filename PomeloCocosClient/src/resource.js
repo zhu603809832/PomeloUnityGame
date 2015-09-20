@@ -4,6 +4,7 @@ var res = {
     LoginScene_json : "res/LoginScene.json",
     RegisterScene_json : "res/RegisterScene.json",
     SelectRoleScene_json : "res/SelectRoleScene.json",
+    LoadingScene_json : "res/LoadingScene.json",
 };
 
 var g_resources = [];
