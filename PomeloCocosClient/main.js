@@ -55,7 +55,5 @@ cc.game.onStart = function(){
     cc.LoaderScene.preload(g_resources, function () {
         cc.director.runScene(new LoginScene());
     }, this);
-
-    cc.game.pomelo = window.pomelo;
 };
 cc.game.run();

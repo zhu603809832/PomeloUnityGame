@@ -79,15 +79,21 @@ var RegisterLayer = cc.Layer.extend({
     },
 
     register:function(){
+        if(app.getLoading()){
+            return;
+        }
+        app.setLoading(true);
         var account = this.txtAccount.getString();
         var password = this.txtPassword.getString();
         var passwordConfirm = this.txtPasswordConfirm.getString();
         if(account == "" || password == "" || passwordConfirm == ""){
             alert("input error, please check!");
+            app.setLoading(false);
             return ;
         }
         if(password != passwordConfirm){
             alert("Two times the password is not consistent!");
+            app.setLoading(false);
             return ;
         }
         registerPostRequest(account, password);
@@ -118,15 +124,17 @@ var registerPostRequest = function(account, password){
             switch(code){
                 case 501:
                     alert("username already exist!");
+                    app.setLoading(false);
                     break;
                 case 200://register success
                     authEntry(data.uid, data.token, function() {
-
+                        app.setLoading(false);
                     });
                     localStorage.setItem('username', account);
                     break;
                 default :
                     alert("register fail!");
+                    app.setLoading(false);
                     break;
             }
         }

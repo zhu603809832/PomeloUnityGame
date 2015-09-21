@@ -1,0 +1,339 @@
+{
+  "ID": "80f6ddb1-e30a-46bf-b624-acc4c0d889ea",
+  "Version": "2.3.2.3",
+  "Name": "GamePreludeScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 12,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 13,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "gamePrelude.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 15,
+                "Scale9Width": 920,
+                "Scale9Height": 585,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0001,
+                  "Y": 319.3077
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.4989
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "LeftMargin": 0.0001,
+                "RightMargin": -0.0001,
+                "TopMargin": 0.6923,
+                "BottomMargin": -0.6923,
+                "Tag": 14,
+                "ActionTag": 1177055232,
+                "Size": {
+                  "X": 960.0,
+                  "Y": 640.0
+                },
+                "Name": "ImageBkg",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "LogoMin.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 128,
+                "Scale9Height": 87,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 480.0,
+                  "Y": 560.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.875
+                },
+                "PreSize": {
+                  "X": 0.1333,
+                  "Y": 0.1359
+                },
+                "LeftMargin": 416.0,
+                "RightMargin": 416.0,
+                "TopMargin": 36.5,
+                "BottomMargin": 516.5,
+                "Tag": 15,
+                "ActionTag": 1579022230,
+                "Size": {
+                  "X": 128.0,
+                  "Y": 87.0
+                },
+                "Name": "ImageLogon",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "BackColorAlpha": 0,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 480.0,
+                  "Y": 400.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.625
+                },
+                "PreSize": {
+                  "X": 0.2083,
+                  "Y": 0.3125
+                },
+                "LeftMargin": 480.0,
+                "RightMargin": 280.0,
+                "TopMargin": 40.0,
+                "BottomMargin": 400.0,
+                "Tag": 16,
+                "Children": [
+                  {
+                    "FontSize": 20,
+                    "ButtonText": "SKIP",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "btn3.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "btn2.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "btn1.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 56,
+                    "Scale9Height": 13,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 360.7566,
+                      "Y": -364.9837
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 1.8038,
+                      "Y": -1.8249
+                    },
+                    "PreSize": {
+                      "X": 0.43,
+                      "Y": 0.175
+                    },
+                    "LeftMargin": 317.7566,
+                    "RightMargin": -203.7566,
+                    "TopMargin": 547.4837,
+                    "BottomMargin": -382.4837,
+                    "Tag": 23,
+                    "ActionTag": 1736401113,
+                    "Size": {
+                      "X": 86.0,
+                      "Y": 35.0
+                    },
+                    "Name": "ButtonSkip",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "GamePrludeText.png",
+                      "Plist": ""
+                    },
+                    "Scale9Width": 789,
+                    "Scale9Height": 427,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 48.5511,
+                      "Y": -108.1971
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2428,
+                      "Y": -0.541
+                    },
+                    "PreSize": {
+                      "X": 3.945,
+                      "Y": 2.135
+                    },
+                    "LeftMargin": -345.9489,
+                    "RightMargin": -243.0511,
+                    "TopMargin": 94.6971,
+                    "BottomMargin": -321.6971,
+                    "Tag": 24,
+                    "ActionTag": -1359373687,
+                    "Size": {
+                      "X": 789.0,
+                      "Y": 427.0
+                    },
+                    "Name": "ImageInfo",
+                    "ctype": "ImageViewObjectData"
+                  }
+                ],
+                "ActionTag": -1062590056,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 200.0
+                },
+                "Name": "Panel_2",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 1402669918,
+            "Size": {
+              "X": 960.0,
+              "Y": 640.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "btn1.png",
+        "btn2.png",
+        "btn3.png",
+        "gamePrelude.png",
+        "GamePrludeText.png",
+        "LogoMin.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

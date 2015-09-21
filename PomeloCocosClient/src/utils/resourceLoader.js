@@ -4,44 +4,76 @@
 
 var pomelo = window.pomelo;
 var dataApi = Data;
-var imagURL = config.IMAGE_URL;
+var imgURL = config.IMAGE_URL;
 var EntityType = EntityType;
 var aniOrientation = aniOrientation;
-//var EventEmitter = window.EventEmitter;
 //var ObjectPoolFactory = require('objectPoolFactory');
 
+const EVENT_NAME_LOADING = "loading";
+const EVENT_NAME_COMPLETE = "complete";
+
 var ResourceLoader = function(opt){
-    //EventEmitter.call(this);
     opt || (opt = {});
     this.totalCount = 0;
     this.loadedCount = 0;
     this.jsonLoad = !!opt.jsonLoad;
+    this.loadingCallbackFn = null;
+    this.completeCallbackFn = null;
+
+    var loadingListener = cc.EventListener.create({event: cc.EventListener.CUSTOM, eventName: EVENT_NAME_LOADING, callback: this.onLoadingCallBack});
+    cc.eventManager.addListener(loadingListener);
+
+    var completeListener = cc.EventListener.create({evnet: cc.EventListener.CUSTOM, envetName: EVENT_NAME_COMPLETE, callback: this.onCompleteCallback});
+    cc.eventManager.addListener(completeListener);
 };
 
 var pro = ResourceLoader.prototype;
 
 pro.setTotalCount = function(count){
     this.totalCount = count;
-    var event = new cc.EventCustom("loading");
+    var event = new cc.EventCustom(EVENT_NAME_LOADING);
     var jsonData = {"total": this.totalCount, "loaded": this.loadedCount };
     var stringData = JSON.stringify(jsonData);
     event.setUserData(stringData);
     cc.eventManager.dispatchEvent(event);
 };
 
+pro.setLoadingCallBackFun = function(fn){
+    if(typeof(fn) == "function"){
+        this.loadingCallbackFn = fn;
+    }
+}
+
 pro.setLoadedCount = function(count){
     this.loadedCount = count;
-    //this.emit('loading', {total: this.totalCount, loaded: this.loadedCount});
 
-    var event = new cc.EventCustom("loading");
+    var event = new cc.EventCustom(EVENT_NAME_LOADING);
     var jsonData = {"total": this.totalCount, "loaded": this.loadedCount };
     var stringData = JSON.stringify(jsonData);
     event.setUserData(stringData);
     cc.eventManager.dispatchEvent(event);
 
     if (this.loadedCount === this.totalCount) {
-        var event = new cc.EventCustom("complete");
+        var event = new cc.EventCustom(EVENT_NAME_COMPLETE);
         cc.eventManager.dispatchEvent(event);
+    }
+};
+
+pro.setCompleteCallbackFn = function(fn){
+    if(typeof(fn) == "function"){
+        this.completeCallbackFn = fn;
+    }
+};
+
+pro.onLoadingCallBack = function(){
+    if(this.loadingCallbackFn){
+        this.loadingCallbackFn();
+    }
+};
+
+pro.onCompleteCallback = function(){
+    if(this.completeCallbackFn){
+        this.completeCallbackFn();
     }
 };
 
@@ -149,9 +181,9 @@ pro.loadEquipment = function(ids) {
  * @api private
  */
 var initObjectPools = function(ids, type) {
-    var of = new ObjectPoolFactory();
+    /*var of = new ObjectPoolFactory();
     for (var i = 0; i < ids.length; i ++) {
         var kindId = ids[i];
         of.createPools(kindId, type);
-    }
+    }*/
 };

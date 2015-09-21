@@ -80,10 +80,14 @@ var SelectRoleLayer = cc.Layer.extend({
     },
 
     createRole: function(){
+        if(app.getLoading()){
+            return;
+        }
         var rolename = this.txtRoleName.getString();
         var roleIndex = this.curSelectRole;
         if(rolename == "" || roleIndex < 0 || roleIndex >= this.roleIds.length()){
             alert("role name require or error roleIndex!");
+            app.setLoading(false);
             return;
         }
         creatRoleRequest(rolename, this.roleIds[roleIndex]);
@@ -111,6 +115,7 @@ var SelectRoleScene = cc.Scene.extend({
 var creatRoleRequest = function(rolename, roleId){
     var pomelo = window.pomelo;
     pomelo.request("connector.roleHandler.createPlayer", {name: rolename, roleId: roleId}, function(data) {
+        app.setLoading(false);
         if (data.code == 500) {
             alert("The name already exists!");
             return;

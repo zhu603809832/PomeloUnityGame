@@ -99,15 +99,3 @@ ui.init = function(){
         player.emit('change:defenceValue');
     });*/
 };
-
-__resources__["/ui.js"] = {
-    meta: {mimetype: "application/javascript"},
-
-    data: function(exports, require, module, __filename, __dirname) {
-
-
-
-        exports.init = function() {
-
-        };
-    }};

@@ -35,6 +35,12 @@
         <Image Name="Loadratecover.png" />
         <Image Name="Loadtt.png" />
         <Project Name="LoadingScene.csd" Type="Scene" />
+        <Project Name="GamePreludeScene.csd" Type="Scene" />
+        <Image Name="gamePrelude.png" />
+        <Image Name="GamePrludeText.png" />
+        <Image Name="btn1.png" />
+        <Image Name="btn2.png" />
+        <Image Name="btn3.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

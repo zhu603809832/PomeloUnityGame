@@ -69,15 +69,21 @@ var LoginLayer = cc.Layer.extend({
     },
 
     login : function(){
+        if (app.getLoading()) {
+            return;
+        }
+        app.setLoading(true);
         var account = this.txtAccount.getString();
         var password = this.txtPassword.getString();
         if(!account){
             alert("account require");
+            app.setLoading(false);
             return;
         }
 
         if(!password){
             alert("password require");
+            app.setLoading(false);
             return;
         }
         httpPostRequest(account, password);
@@ -107,18 +113,21 @@ var httpPostRequest = function(username, password){
             switch(code){
                 case 500:
                     alert("username not exist!");
+                    app.setLoading(false);
                     break;
                 case 501:
                     alert("password incorrect!");
+                    app.setLoading(false);
                     break;
                 case 200://success
                     authEntry(data.uid, data.token, function() {
-
+                        app.setLoading(false);
                     });
                     localStorage.setItem('username', username);
 
                     break;
                 default :
+                    app.setLoading(false);
                     break;
             }
         }
@@ -211,31 +220,26 @@ var afterLogin = function(data){
 
 var loadResource = function(opt, callback){
     cc.director.runScene(new LoadingScene());
-    /*
-    var loader = new ResourceLoader(opt); //ResourceLoader需要实现
-    var $percent = $('#id_loadPercent').html(0);
-    var $bar = $('#id_loadRate').css('width', 0);
-    loader.on('loading', function(data) {
-        var n = parseInt(data.loaded * 100 / data.total, 10);
-        $bar.css('width', n + '%');
-        $percent.html(n);
+    var loader = new ResourceLoader(opt);
+    loader.setLoadingCallBackFun(function(data){
+        var percent = parseInt(data.loaded * 100 / data.total, 10);
+        var txtShow = percent + "%";
     });
-    loader.on('complete', function() {
-        if (callback) {
+
+    loader.setCompleteCallbackFn(function(){
+        if(callback){
             setTimeout(function(){
-                callback();
+                callback()
             }, 500);
         }
     });
 
     loader.loadAreaResource();
-    */
 };
 
 var gamePrelude = function(){
-    //enterScene();
+    cc.director.runScene(new gamePreludeScene());
     /*
-    switchManager.selectView("gamePrelude");
     var entered = false;
     $('#id_skipbnt').on('click', function() {
         if (!entered) {

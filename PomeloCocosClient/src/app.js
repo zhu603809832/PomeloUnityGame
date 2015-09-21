@@ -23,7 +23,12 @@ var poolManager = null;
 var delayTime = null;*/
 
 var app = function(){
+    this.pomelo = window.pomelo;
+    this.loading = false;
 
+    this.pomelo.on('websocket-error', function(){
+        this.loading = false;
+    });
 };
 
 /**
@@ -49,6 +54,15 @@ app.init = function(data){
     }
     ui.init();*/
 };
+
+app.setLoading = function(loading){
+    this.loading = loading;
+};
+
+app.getLoading = function(){
+    return this.loading;
+};
+
 /*
 
 /!**
