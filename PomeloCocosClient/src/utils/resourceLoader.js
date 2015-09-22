@@ -9,8 +9,8 @@ var EntityType = EntityType;
 var aniOrientation = aniOrientation;
 //var ObjectPoolFactory = require('objectPoolFactory');
 
-const EVENT_NAME_LOADING = "loading";
-const EVENT_NAME_COMPLETE = "complete";
+const EVENT_NAME_LOADING = "loadingResouceEvent";
+const EVENT_NAME_COMPLETE = "completeResouceEvent";
 
 var ResourceLoader = function(opt){
     opt || (opt = {});
@@ -20,11 +20,11 @@ var ResourceLoader = function(opt){
     this.loadingCallbackFn = null;
     this.completeCallbackFn = null;
 
-    var loadingListener = cc.EventListener.create({event: cc.EventListener.CUSTOM, eventName: EVENT_NAME_LOADING, callback: this.onLoadingCallBack});
-    cc.eventManager.addListener(loadingListener);
+    var loadingListener = cc.EventListener.create({event: cc.EventListener.CUSTOM, eventName: EVENT_NAME_LOADING, callback: onLoadingCallBack, selfInfo: this});
+    cc.eventManager.addListener(loadingListener, 1);
 
-    var completeListener = cc.EventListener.create({evnet: cc.EventListener.CUSTOM, envetName: EVENT_NAME_COMPLETE, callback: this.onCompleteCallback});
-    cc.eventManager.addListener(completeListener);
+    var completeListener = cc.EventListener.create({event: cc.EventListener.CUSTOM, eventName: EVENT_NAME_COMPLETE, callback: onCompleteCallback, selfInfo: this});
+    cc.eventManager.addListener(completeListener, 1);
 };
 
 var pro = ResourceLoader.prototype;
@@ -52,7 +52,6 @@ pro.setLoadedCount = function(count){
     var stringData = JSON.stringify(jsonData);
     event.setUserData(stringData);
     cc.eventManager.dispatchEvent(event);
-
     if (this.loadedCount === this.totalCount) {
         var event = new cc.EventCustom(EVENT_NAME_COMPLETE);
         cc.eventManager.dispatchEvent(event);
@@ -65,15 +64,19 @@ pro.setCompleteCallbackFn = function(fn){
     }
 };
 
-pro.onLoadingCallBack = function(){
-    if(this.loadingCallbackFn){
-        this.loadingCallbackFn();
+var onLoadingCallBack = function(event){
+    var resourceLoaderInstance = this.selfInfo || {};
+    if(resourceLoaderInstance.loadingCallbackFn){
+        var data = JSON.parse(event.getUserData())
+        resourceLoaderInstance.loadingCallbackFn(data);
     }
 };
 
-pro.onCompleteCallback = function(){
-    if(this.completeCallbackFn){
-        this.completeCallbackFn();
+var onCompleteCallback = function(event){
+    var resourceLoaderInstance = this.selfInfo || {};
+    if(resourceLoaderInstance.completeCallbackFn){
+        var data = JSON.parse(event.getUserData())
+        resourceLoaderInstance.completeCallbackFn(data);
     }
 };
 
@@ -86,10 +89,10 @@ pro.loadJsonResource = function(callback){
         }
         return;
     }
-    var version = dataApi.getVersion();
+    var version = getVersion();
     pomelo.request('area.resourceHandler.loadResource', {version: version},  function(result) {
-        dataApi.setData(result.data);
-        dataApi.setVersion(result.version);
+        setData(result.data);
+        setVersion(result.version);
         this.jsonLoad = false;
         if (callback) {
             callback();

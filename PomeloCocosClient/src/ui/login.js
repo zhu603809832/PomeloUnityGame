@@ -219,11 +219,12 @@ var afterLogin = function(data){
 };
 
 var loadResource = function(opt, callback){
-    cc.director.runScene(new LoadingScene());
+    var loadingScene = new LoadingScene();
+    cc.director.runScene(loadingScene);
     var loader = new ResourceLoader(opt);
     loader.setLoadingCallBackFun(function(data){
         var percent = parseInt(data.loaded * 100 / data.total, 10);
-        var txtShow = percent + "%";
+        loadingScene.setPercentBar(percent);
     });
 
     loader.setCompleteCallbackFn(function(){
@@ -238,27 +239,7 @@ var loadResource = function(opt, callback){
 };
 
 var gamePrelude = function(){
-    cc.director.runScene(new gamePreludeScene());
-    /*
-    var entered = false;
-    $('#id_skipbnt').on('click', function() {
-        if (!entered) {
-            entered = true;
-            enterScene();
-        }
-    });
-    setTimeout(function(){
-        if (!entered) {
-            entered = true;
-            enterScene();
-        }
-    }, 12000);
-    */
-};
-
-var enterScene = function(){
-    var pomelo = window.pomelo;
-    pomelo.request("area.playerHandler.enterScene", null, function(data){
-        //app.init(data);
-    });
+    var gamePrelude = new gamePreludeScene()
+    cc.director.runScene(gamePrelude);
+    gamePrelude.setEnteredSceneFlag(false);
 };

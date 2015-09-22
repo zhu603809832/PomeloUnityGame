@@ -1,3 +1,11 @@
+var getVersion = function() {
+    return JSON.parse(localStorage.getItem('version')) || {};
+};
+
+var setVersion = function(version) {
+    localStorage.setItem('version', JSON.stringify(version));
+};
+
 var Data = function(key){
     this.key = key;
     this.data = null;
@@ -22,63 +30,58 @@ var Data = function(key){
         return this.data;
     };
 
-    //animation data
-    function AnimationData(){
-        this.data = {};
-    }
+};
 
-    AnimationData.prototype.set = function(data) {
-        data || (data = {});
-        this.data = data;
-        setTimeout(function() {
-            for (var k in data) {
-                localStorage.setItem('ani_' + k, JSON.stringify(data[k]));
-            }
-        }, 600);
-    };
+//animation data
+var AnimationData = function(){
+    this.data = {};
+}
 
-    AnimationData.prototype.get = function(id) {
-        var ani  = this.data[id];
-        if (!ani) {
-            ani =  JSON.parse(localStorage.getItem('ani_' + id)) || {};
+AnimationData.prototype.set = function(data) {
+    data || (data = {});
+    this.data = data;
+    setTimeout(function() {
+        for (var k in data) {
+            localStorage.setItem('ani_' + k, JSON.stringify(data[k]));
         }
-        return ani;
-    };
+    }, 600);
+};
 
-    //effect data
-    function Effect(data) {
-        this.key = 'effect';
+AnimationData.prototype.get = function(id) {
+    var ani  = this.data[id];
+    if (!ani) {
+        ani =  JSON.parse(localStorage.getItem('ani_' + id)) || {};
     }
+    return ani;
+};
 
-    Effect.prototype.set = function(data) {
-        localStorage.setItem(this.key, JSON.stringify(data));
-    };
 
-    Effect.prototype.all = function(id) {
-        return JSON.parse(localStorage.getItem(this.key)) || {};
-    };
+//effect data
+var Effect = function(data) {
+    this.key = 'effect';
+}
 
-    Effect.prototype.findById = function(id) {
-        var data = this.all();
-        var i, result;
-        for (i in data) {
-            if (data[i].id == id) {
-                result = data[i];
-                break;
-            }
+Effect.prototype.set = function(data) {
+    localStorage.setItem(this.key, JSON.stringify(data));
+};
+
+Effect.prototype.all = function(id) {
+    return JSON.parse(localStorage.getItem(this.key)) || {};
+};
+
+Effect.prototype.findById = function(id) {
+    var data = this.all();
+    var i, result;
+    for (i in data) {
+        if (data[i].id == id) {
+            result = data[i];
+            break;
         }
-        return result;
-    };
+    }
+    return result;
 };
 
-getVersion = function() {
-    return JSON.parse(localStorage.getItem('version')) || {};
-};
-
-setVersion = function(version) {
-    localStorage.setItem('version', JSON.stringify(version));
-};
-
+var allData = {};
 var fightskill = new Data('fightskill');
 var equipment = new Data( 'equipment');
 var item = new Data('item');
@@ -87,15 +90,21 @@ var npc = new Data('npc');
 var animation = new AnimationData();
 var effect = new Effect();
 
+allData.fightskill = fightskill;
+allData.equipment = equipment;
+allData.item = item;
+allData.character = character;
+allData.npc = npc;
+allData.animation = animation;
+allData.effect = effect;
+
 var setData = function(data){
     if (data) {
-        for (var i in data) {
-            /*
-            var obj = exports[i];
-            if (obj && obj.set) {
-                obj.set(data[i]);
+        for (var key in data) {
+            var obj = allData[key];
+            if (obj && obj.set && data[key]) {
+                obj.set(data[key]);
             }
-            */
         }
     }
 };

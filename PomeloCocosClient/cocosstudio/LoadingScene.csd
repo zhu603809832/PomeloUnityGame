@@ -82,14 +82,14 @@
                     <PreSize X="0.4750" Y="0.1600" />
                     <FileData Type="Normal" Path="LoginLogo.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="TextPercent" ActionTag="-668808790" Tag="48" IconVisible="False" LeftMargin="42.0000" RightMargin="122.0000" TopMargin="167.0000" BottomMargin="-3.0000" FontSize="18" LabelText="100%&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="36.0000" Y="36.0000" />
+                  <AbstractNodeData Name="TextPercent" ActionTag="-668808790" Tag="48" IconVisible="False" LeftMargin="32.5000" RightMargin="112.5000" TopMargin="164.0000" BottomMargin="14.0000" IsCustomSize="True" FontSize="20" LabelText="100%&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="55.0000" Y="22.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="60.0000" Y="15.0000" />
+                    <Position X="60.0000" Y="25.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="0" G="0" B="0" />
-                    <PrePosition X="0.3000" Y="0.0750" />
-                    <PreSize X="0.1800" Y="0.1000" />
+                    <PrePosition X="0.3000" Y="0.1250" />
+                    <PreSize X="0.2750" Y="0.1100" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>

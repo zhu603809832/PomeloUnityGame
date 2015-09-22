@@ -20,6 +20,17 @@ var gamePreludeLayer = cc.Layer.extend({
         var btnSkip = ccui.helper.seekWidgetByName(gamePreludeRoot.node, "ButtonSkip");
         this.btnSkip = btnSkip;
         this.btnSkip.addTouchEventListener(this.OnClickButton,this);
+
+        this.enteredScene = false;
+
+
+        setTimeout(function(){
+            if (!this.getEnteredSceneFlag()) {
+                this.setEnteredSceneFlag(true);
+                enterScene();
+            }
+        }, 12000);
+
         return true;
     },
 
@@ -27,7 +38,10 @@ var gamePreludeLayer = cc.Layer.extend({
         switch (type){
             case ccui.Widget.TOUCH_BEGAN:
                 if(sender == this.btnSkip){
-                    enterScene();
+                    if (!this.enteredScene) {
+                        this.enteredScene = true;
+                        enterScene();
+                    }
                 }
                 break;
             default :
@@ -35,19 +49,32 @@ var gamePreludeLayer = cc.Layer.extend({
         }
         return true;
     },
+
+    setEnteredSceneFlag: function(enteredScene){
+        this.enteredScene = enteredScene;
+    },
+
+    getEnteredSceneFlag: function(){
+        return this.enteredScene;
+    }
 });
 
 var gamePreludeScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
         var layer = new gamePreludeLayer();
+        this.gamePreludeLayer = layer;
         this.addChild(layer);
     }
 });
 
+gamePreludeScene.prototype.setEnteredSceneFlag = function (enteredScene){
+    this.gamePreludeLayer.setEnteredSceneFlag(enteredScene);
+};
 
 var enterScene = function(){
-    /*pomelo.request("area.playerHandler.enterScene", null, function(data){
-        app.init(data);
-    });*/
+    var pomelo = window.pomelo;
+    pomelo.request("area.playerHandler.enterScene", null, function(data){
+        //app.init(data);
+    });
 };
