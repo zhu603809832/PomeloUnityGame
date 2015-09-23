@@ -214,7 +214,7 @@ var afterLogin = function(data){
     pomelo.player = playerData;
 
     loadResource({jsonLoad: true}, function() {
-        gamePrelude();
+        gamePreludeProcess();
     });
 };
 
@@ -238,8 +238,8 @@ var loadResource = function(opt, callback){
     loader.loadAreaResource();
 };
 
-var gamePrelude = function(){
-    var gamePrelude = new gamePreludeScene()
+var gamePreludeProcess = function(){
+    var gamePrelude = new gamePreludeScene();
     cc.director.runScene(gamePrelude);
     gamePrelude.setEnteredSceneFlag(false);
 };

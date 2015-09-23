@@ -52,27 +52,27 @@
                     <PreSize X="2.6500" Y="0.4800" />
                     <FileData Type="Normal" Path="Loadframebg1.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_7" ActionTag="-1174505136" Tag="45" IconVisible="False" LeftMargin="-245.5000" RightMargin="-45.5000" TopMargin="182.5000" BottomMargin="-17.5000" Scale9Width="491" Scale9Height="35" ctype="ImageViewObjectData">
-                    <Size X="491.0000" Y="35.0000" />
+                  <AbstractNodeData Name="Image_7" ActionTag="-1174505136" Alpha="178" Tag="45" IconVisible="False" LeftMargin="-235.0000" RightMargin="-35.0000" TopMargin="190.0000" BottomMargin="-20.0000" Scale9Width="491" Scale9Height="35" ctype="ImageViewObjectData">
+                    <Size X="470.0000" Y="30.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
+                    <Position Y="-5.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="2.4550" Y="0.1750" />
-                    <FileData Type="Normal" Path="Loadratebg.png" Plist="" />
+                    <PrePosition Y="-0.0250" />
+                    <PreSize X="2.3500" Y="0.1500" />
+                    <FileData Type="Normal" Path="Loadratebgnew.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_8" ActionTag="-822209009" Tag="46" IconVisible="False" LeftMargin="-245.5000" RightMargin="-45.5000" TopMargin="182.5000" BottomMargin="-17.5000" Scale9Width="491" Scale9Height="35" ctype="ImageViewObjectData">
-                    <Size X="491.0000" Y="35.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
+                  <AbstractNodeData Name="ImageProcess" ActionTag="-822209009" Alpha="191" Tag="46" IconVisible="False" LeftMargin="-235.0000" RightMargin="-35.0000" TopMargin="190.0000" BottomMargin="-20.0000" LeftEage="162" RightEage="162" TopEage="11" BottomEage="11" Scale9OriginX="162" Scale9OriginY="11" Scale9Width="167" Scale9Height="13" ctype="ImageViewObjectData">
+                    <Size X="470.0000" Y="30.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="-235.0000" Y="-5.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="2.4550" Y="0.1750" />
-                    <FileData Type="Normal" Path="Loadratecover.png" Plist="" />
+                    <CColor A="255" R="193" G="157" B="67" />
+                    <PrePosition X="-1.1750" Y="-0.0250" />
+                    <PreSize X="2.3500" Y="0.1500" />
+                    <FileData Type="Normal" Path="Loadratecovernew.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_9" ActionTag="1800218238" Tag="47" IconVisible="False" LeftMargin="-47.5000" RightMargin="152.5000" TopMargin="159.0000" BottomMargin="9.0000" Scale9Width="95" Scale9Height="32" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="ImageLogo" ActionTag="1800218238" Tag="47" IconVisible="False" LeftMargin="-47.5000" RightMargin="152.5000" TopMargin="159.0000" BottomMargin="9.0000" Scale9Width="95" Scale9Height="32" ctype="ImageViewObjectData">
                     <Size X="95.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position Y="25.0000" />

@@ -41,6 +41,8 @@
         <Image Name="btn1.png" />
         <Image Name="btn2.png" />
         <Image Name="btn3.png" />
+        <Image Name="Loadratecovernew.png" />
+        <Image Name="Loadratebgnew.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -21,6 +21,10 @@ var LoadingLayer = cc.Layer.extend({
         var txtPercent = ccui.helper.seekWidgetByName(loadingRoot.node, "TextPercent");
         this.txtPercent = txtPercent;
 
+        var ImageProcess = ccui.helper.seekWidgetByName(loadingRoot.node, "ImageProcess");
+        this.ImageProcess = ImageProcess;
+        this.originContentSize = this.ImageProcess.getContentSize();
+        this.setPercentBar(0);
         return true;
     },
 
@@ -28,6 +32,8 @@ var LoadingLayer = cc.Layer.extend({
         this.percent = percent;
         var txtShow = this.percent + "%";
         this.txtPercent.setString(txtShow);
+        var contentSize = {width:this.percent / 100 * this.originContentSize.width, height:this.originContentSize.height};
+        this.ImageProcess.setContentSize(contentSize);
     }
 });
 
@@ -41,5 +47,7 @@ var LoadingScene = cc.Scene.extend({
 });
 
 LoadingScene.prototype.setPercentBar = function(percent){
-    this.loadingLayer.setPercentBar(percent);
+    if(this.loadingLayer){
+        this.loadingLayer.setPercentBar(percent);
+    }
 };

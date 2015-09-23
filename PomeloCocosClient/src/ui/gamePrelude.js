@@ -63,18 +63,21 @@ var gamePreludeScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
         var layer = new gamePreludeLayer();
-        this.gamePreludeLayer = layer;
         this.addChild(layer);
+        this.gamePreludeLayer = layer;
+        this.gamePreludeLayer.setEnteredSceneFlag(false);
     }
 });
 
 gamePreludeScene.prototype.setEnteredSceneFlag = function (enteredScene){
-    this.gamePreludeLayer.setEnteredSceneFlag(enteredScene);
+    if(this.gamePreludeLayer){
+        this.gamePreludeLayer.setEnteredSceneFlag(enteredScene);
+    }
 };
 
 var enterScene = function(){
     var pomelo = window.pomelo;
     pomelo.request("area.playerHandler.enterScene", null, function(data){
-        //app.init(data);
+        app.init(data);
     });
 };

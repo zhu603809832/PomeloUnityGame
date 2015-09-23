@@ -270,7 +270,7 @@
                   {
                     "FileData": {
                       "Type": "Normal",
-                      "Path": "Loadratebg.png",
+                      "Path": "Loadratebgnew.png",
                       "Plist": ""
                     },
                     "Scale9Width": 491,
@@ -281,7 +281,7 @@
                     },
                     "Position": {
                       "X": 0.0,
-                      "Y": 0.0
+                      "Y": -5.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -291,66 +291,73 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.0,
-                      "Y": 0.0
+                      "Y": -0.025
                     },
                     "PreSize": {
-                      "X": 2.455,
-                      "Y": 0.175
+                      "X": 2.35,
+                      "Y": 0.15
                     },
-                    "LeftMargin": -245.5,
-                    "RightMargin": -45.5,
-                    "TopMargin": 182.5,
-                    "BottomMargin": -17.5,
+                    "LeftMargin": -235.0,
+                    "RightMargin": -35.0,
+                    "TopMargin": 190.0,
+                    "BottomMargin": -20.0,
                     "Tag": 45,
                     "ActionTag": -1174505136,
                     "Size": {
-                      "X": 491.0,
-                      "Y": 35.0
+                      "X": 470.0,
+                      "Y": 30.0
                     },
+                    "Alpha": 178,
                     "Name": "Image_7",
                     "ctype": "ImageViewObjectData"
                   },
                   {
                     "FileData": {
                       "Type": "Normal",
-                      "Path": "Loadratecover.png",
+                      "Path": "Loadratecovernew.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 491,
-                    "Scale9Height": 35,
+                    "Scale9OriginX": 162,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 167,
+                    "Scale9Height": 13,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": -235.0,
+                      "Y": -5.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 193,
+                      "G": 157,
+                      "B": 67
+                    },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0,
-                      "Y": 0.0
+                      "X": -1.175,
+                      "Y": -0.025
                     },
                     "PreSize": {
-                      "X": 2.455,
-                      "Y": 0.175
+                      "X": 2.35,
+                      "Y": 0.15
                     },
-                    "LeftMargin": -245.5,
-                    "RightMargin": -45.5,
-                    "TopMargin": 182.5,
-                    "BottomMargin": -17.5,
+                    "LeftMargin": -235.0,
+                    "RightMargin": -35.0,
+                    "TopMargin": 190.0,
+                    "BottomMargin": -20.0,
                     "Tag": 46,
                     "ActionTag": -822209009,
                     "Size": {
-                      "X": 491.0,
-                      "Y": 35.0
+                      "X": 470.0,
+                      "Y": 30.0
                     },
-                    "Name": "Image_8",
+                    "Alpha": 191,
+                    "Name": "ImageProcess",
                     "ctype": "ImageViewObjectData"
                   },
                   {
@@ -393,7 +400,7 @@
                       "X": 95.0,
                       "Y": 32.0
                     },
-                    "Name": "Image_9",
+                    "Name": "ImageLogo",
                     "ctype": "ImageViewObjectData"
                   },
                   {
@@ -482,8 +489,8 @@
         "Loadframebg0.png",
         "Loadframebg1.png",
         "loadingBkg.jpg",
-        "Loadratebg.png",
-        "Loadratecover.png",
+        "Loadratebgnew.png",
+        "Loadratecovernew.png",
         "LoginLogo.png",
         "LogoMin.png"
       ],
