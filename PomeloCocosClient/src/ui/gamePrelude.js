@@ -25,7 +25,7 @@ var gamePreludeLayer = cc.Layer.extend({
 
 
         setTimeout(function(){
-            if (!this.getEnteredSceneFlag()) {
+            if (!this.enteredScene) {
                 this.setEnteredSceneFlag(true);
                 enterScene();
             }
@@ -53,19 +53,18 @@ var gamePreludeLayer = cc.Layer.extend({
     setEnteredSceneFlag: function(enteredScene){
         this.enteredScene = enteredScene;
     },
-
-    getEnteredSceneFlag: function(){
-        return this.enteredScene;
-    }
 });
 
 var gamePreludeScene = cc.Scene.extend({
-    onEnter:function () {
+    ctor:function(){
         this._super();
         var layer = new gamePreludeLayer();
         this.addChild(layer);
         this.gamePreludeLayer = layer;
         this.gamePreludeLayer.setEnteredSceneFlag(false);
+    },
+    onEnter:function () {
+        this._super();
     }
 });
 

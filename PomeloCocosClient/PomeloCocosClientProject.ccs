@@ -43,6 +43,10 @@
         <Image Name="btn3.png" />
         <Image Name="Loadratecovernew.png" />
         <Image Name="Loadratebgnew.png" />
+        <Project Name="GameMainScene.csd" Type="Scene" />
+        <Image Name="Life.png" />
+        <Image Name="magic.png" />
+        <Image Name="PlayerAvatar.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

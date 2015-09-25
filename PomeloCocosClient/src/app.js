@@ -36,9 +36,9 @@ var app = function(){
  * @param data {Object} The data for init area
  */
 app.init = function(data){
-    /*var map = data.map;
+    var map = data.map;
     pomelo.player = data.curPlayer;
-    switchManager.selectView('gamePanel');
+    /*switchManager.selectView('gamePanel');
     if(inited){
         configData(data);
         area = new Area(data, map);

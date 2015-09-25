@@ -38,11 +38,14 @@ var LoadingLayer = cc.Layer.extend({
 });
 
 var LoadingScene = cc.Scene.extend({
-    onEnter:function () {
+    ctor:function(){
         this._super();
         var layer = new LoadingLayer();
         this.addChild(layer);
         this.loadingLayer = layer;
+    },
+    onEnter:function () {
+        this._super();
     }
 });
 
