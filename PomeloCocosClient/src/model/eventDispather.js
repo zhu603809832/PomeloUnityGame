@@ -10,7 +10,7 @@ EventDispather.prototype.init = function(){
     this._listenerMap = new Object();
 };
 
-EventDispather.prototype.addLisener = function(event, callback){
+EventDispather.prototype.addListener = function(event, callback){
     if(!event || !callback){
         return;
     }
