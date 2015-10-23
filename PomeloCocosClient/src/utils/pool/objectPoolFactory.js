@@ -26,8 +26,8 @@ ObjectPoolFactory.prototype.createPools = function(kindId, type) {
 	for (var i = 0; i < name.length; i++) {
 		var animationName = name[i];
 		var objectPool = createPool(kindId, type, animationName);
-		var poolName = getPoolName(kindId, animationName);
-		//app.getObjectPoolManager().addPool(poolName, objectPool);
+		var poolName = kindId + '_' + animationName;
+		app.getInstance().getObjectPoolManager().addPool(poolName, objectPool);
 	}
 };
 

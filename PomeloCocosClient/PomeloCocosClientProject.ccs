@@ -3,7 +3,6 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="MainScene.csd" Type="Scene" />
         <Image Name="HelloWorld.png" />
         <Project Name="LoginScene.csd" Type="Scene" />
         <Image Name="Input.png" />
@@ -47,6 +46,13 @@
         <Image Name="Life.png" />
         <Image Name="magic.png" />
         <Image Name="PlayerAvatar.png" />
+        <TmxFile Name="desert.tmx" />
+        <Folder Name="map">
+          <TmxFile Name="oasis.tmx" />
+          <TmxFile Name="oasismin.tmx" />
+          <TmxFile Name="oasismedium.tmx" />
+          <TmxFile Name="oasismore.tmx" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

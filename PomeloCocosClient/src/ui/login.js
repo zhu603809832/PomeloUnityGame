@@ -69,21 +69,21 @@ var LoginLayer = cc.Layer.extend({
     },
 
     login : function(){
-        if (app.getLoading()) {
+        if (app.getInstance().getLoading()) {
             return;
         }
-        app.setLoading(true);
+        app.getInstance().setLoading(true);
         var account = this.txtAccount.getString();
         var password = this.txtPassword.getString();
         if(!account){
             alert("account require");
-            app.setLoading(false);
+            app.getInstance().setLoading(false);
             return;
         }
 
         if(!password){
             alert("password require");
-            app.setLoading(false);
+            app.getInstance().setLoading(false);
             return;
         }
         httpPostRequest(account, password);
@@ -113,21 +113,21 @@ var httpPostRequest = function(username, password){
             switch(code){
                 case 500:
                     alert("username not exist!");
-                    app.setLoading(false);
+                    app.getInstance().setLoading(false);
                     break;
                 case 501:
                     alert("password incorrect!");
-                    app.setLoading(false);
+                    app.getInstance().setLoading(false);
                     break;
                 case 200://success
                     authEntry(data.uid, data.token, function() {
-                        app.setLoading(false);
+                        app.getInstance().setLoading(false);
                     });
                     localStorage.setItem('username', username);
 
                     break;
                 default :
-                    app.setLoading(false);
+                    app.getInstance().setLoading(false);
                     break;
             }
         }

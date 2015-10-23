@@ -18,17 +18,18 @@ var Data = function(key){
         }, 300);
     };
 
-    Data.prototype.findById = function(id){
-      var data = this.all();
-        return data[id];
-    };
-
     Data.prototype.all = function(){
         if(!this.data){
             this.data = JSON.parse(localStorage.getItem(this.key)) || {};
         }
         return this.data;
     };
+
+    Data.prototype.findById = function(id){
+      var data = this.all();
+        return data[id];
+    };
+
 
 };
 

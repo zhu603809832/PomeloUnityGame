@@ -26,7 +26,7 @@ var gamePreludeLayer = cc.Layer.extend({
 
         setTimeout(function(){
             if (!this.enteredScene) {
-                this.setEnteredSceneFlag(true);
+                this.enteredScene = true;
                 enterScene();
             }
         }, 12000);
@@ -77,6 +77,6 @@ gamePreludeScene.prototype.setEnteredSceneFlag = function (enteredScene){
 var enterScene = function(){
     var pomelo = window.pomelo;
     pomelo.request("area.playerHandler.enterScene", null, function(data){
-        app.init(data);
+        app.getInstance().init(data);
     });
 };

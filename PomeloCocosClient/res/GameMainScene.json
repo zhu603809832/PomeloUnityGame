@@ -1,0 +1,156 @@
+{
+  "ID": "4e5b3dee-c308-4011-a107-0b246ee1422f",
+  "Version": "2.3.2.3",
+  "Name": "GameMainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 19,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "map/oasis.tmx",
+              "Plist": ""
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 0.64,
+              "ScaleY": 0.64
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 3.125,
+              "Y": 3.125
+            },
+            "RightMargin": -2040.0,
+            "TopMargin": -1360.0,
+            "Tag": 77,
+            "ActionTag": 1373200733,
+            "Size": {
+              "X": 3000.0,
+              "Y": 2000.0
+            },
+            "Name": "Map",
+            "ctype": "GameMapObjectData"
+          },
+          {
+            "BackColorAlpha": 0,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 20,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "PlayerAvatar.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 256,
+                "Scale9Height": 74,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 640.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 1.0
+                },
+                "PreSize": {
+                  "X": 0.2667,
+                  "Y": 0.1156
+                },
+                "RightMargin": 704.0,
+                "BottomMargin": 566.0,
+                "Tag": 69,
+                "ActionTag": 1701945230,
+                "Size": {
+                  "X": 256.0,
+                  "Y": 74.0
+                },
+                "Name": "ImageAvatar",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": 1111135013,
+            "Size": {
+              "X": 960.0,
+              "Y": 640.0
+            },
+            "Name": "PanelMain",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "lordmap/oasis.jpg",
+        "map/oasis.tmx",
+        "PlayerAvatar.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

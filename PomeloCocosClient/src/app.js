@@ -11,89 +11,114 @@ var chat = require('chat');
 var view = require("view");
 var director = require('director');
 var helper = require("helper");
-var pomelo = window.pomelo;
-
-var inited = false;
-var skch = null;
-var gd = null;
-var gv = null;
-var area = null;
 var resMgr = null;
 var poolManager = null;
-var delayTime = null;*/
+*/
 
 var app = function(){
-    this.pomelo = window.pomelo;
+    app.instance = null;
     this.loading = false;
-
+    this.inited = false;
+    this.skch = null;
+    this.gd = null;
+    this.gv = null;
+    this.area = null;
+    this.player = null;
+    this.poolManager = null;
+    this.delayTime = null;
+    this.pomelo = window.pomelo;
     this.pomelo.on('websocket-error', function(){
         this.loading = false;
     });
 };
 
-/**
- * Init client ara
- * @param data {Object} The data for init area
- */
-app.init = function(data){
-    var map = data.map;
-    pomelo.player = data.curPlayer;
-    /*switchManager.selectView('gamePanel');
-    if(inited){
-        configData(data);
-        area = new Area(data, map);
-    }else{
-        initColorBox();
-        configData(data);
-        area = new Area(data, map);
+app.instance = null;
 
-        area.run();
-        chat.init();
-
-        inited = true;
+app.getInstance = function(){
+    if(!app.instance){
+        app.instance = new app();
     }
-    ui.init();*/
+    return app.instance;
 };
 
-app.setLoading = function(loading){
+app.prototype.init = function(data){
+    var map = data.map;
+    pomelo.player = data.curPlayer;
+    this.player = data.curPlayer;
+    cc.director.runScene(new gameMainScene());
+    if(this.inited){
+        this.configData(data);
+        //area = new Area(data, map);
+    }else{
+        //initColorBox();
+        this.configData(data);
+        //area = new Area(data, map);
+        //area.run();
+        //chat.init();
+        this.inited = true;
+    }
+    ui.init();
+};
+
+app.prototype.setLoading = function(loading){
     this.loading = loading;
 };
 
-app.getLoading = function(){
+app.prototype.getLoading = function(){
     return this.loading;
 };
 
-/*
+app.prototype.configData = function(data){
+    data.skch = this.skch;
+    data.gd = this.gd;
+    data.gv = this.gv;
+};
 
-/!**
- * Init color box, it will init the skch, gv, gd
- * @api private
- *!/
+app.prototype.getArea = function () {
+    return this.area;
+};
+
+app.prototype.getCurPlayer = function(){
+    return this.getArea().getCurPlayer();
+};
+
+
+app.prototype.setDelayTime = function (time) {
+    this.delayTime = time;
+}
+
+app.prototype.getDelayTime = function () {
+    return this.delayTime;
+};
+
+app.prototype.getObjectPoolManager = function () {
+    if (!this.poolManager) {
+        this.poolManager = new ObjectPoolManager();
+    }
+    return this.poolManager;
+}
+
 function initColorBox(){
-    if(!skch){
-        var width = parseInt(getComputedStyle(document.getElementById("m-main")).width);
-        var height = parseInt(getComputedStyle(document.getElementById("m-main")).height);
-        skch = helper.createSketchpad(width, height, document.getElementById("m-main"));
-        skch.cmpSprites = cmpSprites;
+    /*
+    if(!app.skch){
+        //var width = parseInt(getComputedStyle(document.getElementById("m-main")).width);
+        //var height = parseInt(getComputedStyle(document.getElementById("m-main")).height);
+        //app.skch = helper.createSketchpad(width, height, document.getElementById("m-main"));
+        //app.skch.cmpSprites = cmpSprites;
     }
 
-    gv = new view.HonestView(skch);
-    gv.showUnloadedImage(false);
-    gd = director.director({
-        view: gv
-    });
+     app.gv = new view.HonestView(this.skch);
+     app.gv.showUnloadedImage(false);
+     app.gd = director.director({
+     view: gv
+     });
+     */
 }
 
-function getArea() {
-    return area;
-}
-
+/*
 /!**
  * Get current player
  *!/
-function getCurPlayer() {
-    return getArea().getCurPlayer();
-}
 
 function getResMgr(){
     if(!resMgr){
@@ -103,32 +128,12 @@ function getResMgr(){
     return resMgr;
 }
 
-function getObjectPoolManager() {
-    if (!poolManager) {
-        poolManager = new ObjectPoolManager();
-    }
-    return poolManager;
-
-}
-
-function setDelayTime(time) {
-    delayTime = time;
-}
-
-function getDelayTime() {
-    return delayTime;
-}
 
 /!**
  * Reconfig the init data for area
  * @param data {Object} The init data for area
  * @api private
  *!/
-function configData(data){
-    data.skch = skch;
-    data.gd = gd;
-    data.gv = gv;
-}
 
 var cmpSprites = function(s1, s2) {
     var m1 = s1.exec('matrix');

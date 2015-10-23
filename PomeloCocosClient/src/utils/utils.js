@@ -38,9 +38,6 @@ var pathAmend = function(sprite, path) {
   return path;
 };
 
-var getPoolName = function(kindId, name) {
-  return kindId + '_' + name;
-};
 
 var invokeCallback = function(cb) {
   if(cb && typeof cb === 'function') {
