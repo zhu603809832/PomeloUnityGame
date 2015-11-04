@@ -19,7 +19,6 @@ var Task = function(opts){
 /**
  * Expose 'Task' constructor.
  */
-module.exports = Task;
 
 Task.prototype=Object.create(EventDispather.prototype);
 

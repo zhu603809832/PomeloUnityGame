@@ -40,7 +40,7 @@ EventDispather.prototype.removeListener = function(event, callback){
     }
 };
 
-EventDispather.prototype.dispatchEvent = function(event){
+EventDispather.prototype.emit = function(event){
     if(this._listenerMap[event]){
         var listeners = this._listenerMap[event].slice();
         for(var i = 0 ; i < listeners.length; i++){

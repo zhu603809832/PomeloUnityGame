@@ -118,9 +118,9 @@ function buildItem(type, data){
   var api;
 
   if(type === 'item'){
-    item = module.exports.clone(dataApi.item.findById(data.kindId));
+    item = clone(dataApi.item.findById(data.kindId));
   }else{
-    item = module.exports.clone(dataApi.equipment.findById(data.kindId));
+    item = clone(dataApi.equipment.findById(data.kindId));
   }
 
   item.x = data.x;

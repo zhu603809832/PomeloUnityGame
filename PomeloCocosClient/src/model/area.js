@@ -25,7 +25,7 @@ var Area = function(opts, map){
     this.entities = {};
     this.players = {};
     this.map = null;
-    this.componentAdder = new ComponentAdder({area: this});
+    //this.componentAdder = new ComponentAdder({area: this});
 
     //this.scene;
     this.skch = opts.skch;
@@ -82,7 +82,7 @@ pro.init = function(opts, map){
     var height = parseInt(getComputedStyle(document.getElementById("m-main")).height);
     pomelo.notify('area.playerHandler.changeView',{width:width, height:height});
 
-    this.componentAdder.addComponent();
+    //this.componentAdder.addComponent();
 };
 
 pro.run = function(){
@@ -199,7 +199,7 @@ pro.addEntity = function(entity){
     }
     this.entities[entity.entityId] = e;
 
-    this.componentAdder.addComponentTo(e);
+    //this.componentAdder.addComponentTo(e);
     return true;
 };
 

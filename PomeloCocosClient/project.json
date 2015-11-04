@@ -18,9 +18,15 @@
         "src/config/config.js",
         "src/config/consts.js",
 
+        "src/utils/pool/objectPool.js",
+        "src/utils/pool/objectPoolFactory.js",
+        "src/utils/pool/objectPoolManager.js",
+        "src/utils/data.js",
+        "src/utils/utils.js",
+        "src/utils/resourceLoader.js",
+
         "src/model/eventDispather.js",
         "src/model/entity.js",
-
         "src/model/task.js",
         "src/model/bag.js",
         "src/model/equipments.js",
@@ -34,14 +40,6 @@
 
         "src/handler/loginMsgHandler.js",
         "src/handler/gameMsgHandler.js",
-
-        "src/utils/pool/objectPool.js",
-        "src/utils/pool/objectPoolFactory.js",
-        "src/utils/pool/objectPoolManager.js",
-        "src/utils/data.js",
-        "src/utils/utils.js",
-        "src/utils/resourceLoader.js",
-
 
         "src/app.js",
         "src/ui/selectRole.js",

@@ -1,7 +1,6 @@
 /**
  * Created by zhu on 2015/10/25.
  */
-EVENT_CHANGE_VALUE = "event_change";
 
 var Entity = function(opts){
     EventDispather.call(this);
@@ -46,5 +45,6 @@ Entity.prototype.destory = function(){
 
 Entity.prototype.set = function(property, value){
     this[property] = value;
-    this.dispatchEvent(EVENT_CHANGE_VALUE);
+    this.emit('change');
+    this.emit('change:' + property);
 };

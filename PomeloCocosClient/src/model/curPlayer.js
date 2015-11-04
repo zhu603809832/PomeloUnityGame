@@ -9,10 +9,11 @@
  * @param {Object} opts
  * @api public
  */
+var dataApi = Data;
 var CurPlayer = function(opts){
     Player.call(this, opts);
 
-    console.log('curPlayer ~ this.kindId = ', this.kindId);
+    //console.log('curPlayer ~ this.kindId = ', this.kindId);
     this.characterData = dataApi.character.findById(this.kindId);
     this.bag = new Bag(opts.bag);
     this.skillPoint = opts.skillPoint || 0;
@@ -39,7 +40,6 @@ var CurPlayer = function(opts){
 /**
  * Expose 'CurPlayer' constructor.
  */
-module.exports = CurPlayer;
 
 CurPlayer.prototype = Object.create(Player.prototype);
 
