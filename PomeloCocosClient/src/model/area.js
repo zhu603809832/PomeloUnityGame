@@ -251,21 +251,21 @@ pro.removePlayer = function(playerId){
  * @api public
  */
 pro.initColorBox = function(){
-    var logicObj = new logic.Logic();
-    this.scene = logicObj.getScene();
-
-    this.gLevel = new Level({
-        logic: logicObj
-    });
-
-    this.gd.setLevel(this.gLevel);
-    var closure = this;
-
-    window.onresize = function(){
-        var width = parseInt(getComputedStyle(document.getElementById("m-main")).width);
-        var height = parseInt(getComputedStyle(document.getElementById("m-main")).height);
-        closure.skch.width = width;
-        closure.skch.height = height;
-        pomelo.notify('area.playerHandler.changeView',{ width:width, height:height});
-    };
+    //var logicObj = new logic.Logic();
+    //this.scene = logicObj.getScene();
+    //
+    //this.gLevel = new Level({
+    //    logic: logicObj
+    //});
+    //
+    //this.gd.setLevel(this.gLevel);
+    //var closure = this;
+    //
+    //window.onresize = function(){
+    //    var width = parseInt(getComputedStyle(document.getElementById("m-main")).width);
+    //    var height = parseInt(getComputedStyle(document.getElementById("m-main")).height);
+    //    closure.skch.width = width;
+    //    closure.skch.height = height;
+    //    pomelo.notify('area.playerHandler.changeView',{ width:width, height:height});
+    //};
 };

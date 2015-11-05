@@ -24,6 +24,7 @@
         "src/utils/data.js",
         "src/utils/utils.js",
         "src/utils/resourceLoader.js",
+        "src/utils/pathFinding.js",
 
         "src/model/eventDispather.js",
         "src/model/entity.js",
